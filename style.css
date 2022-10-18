@@ -1,0 +1,186 @@
+body {
+  font-family: "Helvetica";
+  background-color: #5FBDCE;
+  color: #F0F0F0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  margin: 10px 0;
+}
+
+
+.header__title {
+  margin: 20px 0 20px 0;
+  font-size: 30px;
+  line-height: 1;
+  font-family: "Helvetica Neue";
+}
+
+.header__subtitle {
+  color: #015666;
+  font-size: 16px;
+  line-height: 0.5;
+  margin: 0;
+}
+
+.links {
+  width: 320px;
+  margin-bottom: 40px;
+}
+
+.links__header {
+  font-family: "Helvetica Neue";
+  font-size: 24px;
+  line-height: 1.4;
+  margin: 0 0 15px 0;
+}
+
+.links__container {
+  list-style-type: none;
+  border: 1px solid #015666;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px 20px 10px;
+  gap: 10px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.links__link,
+.links__title {
+  font-size: 15px;
+  font-size: 1.4;
+}
+
+.links__link {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px 0px 10px;
+  gap: 30px;
+  border-bottom: 1px solid #015666;
+  width: 280px;
+}
+
+
+
+.links__link:last-child {
+  border-bottom: none;
+}
+
+.linsk__link,
+.links__link:visited {
+  text-decoration: none;
+  color: #015666;
+}
+
+.links__title {
+  margin: 0;
+  min-width: 100px;
+}
+
+footer {
+  margin: 0 0 5px 0;
+}
+.button-link {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 9px;
+  width: 320px;
+  background: #2E9EB3;
+  border: 15px solid #04396C;
+  border-radius: 100px;
+  border: none;
+  outline: none;
+
+  font-size: 14px;
+  line-height: 1.4;
+
+  color: #F0F0F0;
+  text-decoration: none;
+
+
+   #random-phrase {
+  margin: 5px auto;
+  position: absolute;
+  padding: 150px;
+  font-size: 1.9em;
+  font-style: italic;
+  border: 10px solid #FFD300;
+}
+
+#random-phrase #phrase {
+  text-align: left;
+}
+
+#random-phrase #author {
+  text-align: right;
+}
+
+#next-quote {
+  padding: 10px 10px;
+  border: 1px solid #FFD300;
+}
+}
+.blur-image {
+    filter: blur(5px); /* Размытие изображения */
+    transition: 1s; /* Время перехода */
+}
+.blur-image:hover {
+    filter: blur(0); /* Отменяем размытие */
+}
+.gain-center{
+  transition: 1s; /* Время эффекта */
+  text-align: center; 
+}
+.gain-center:hover {
+  transform: scale(1.2); /* Увеличиваем масштаб */
+}
+.gain-center1{
+  transition: 1s; /* Время эффекта */
+  text-align: center; 
+}
+.gain-center1:hover {
+  transform: scale(1.1); /* Увеличиваем масштаб */
+}
+.mask{
+    --uiMaskClipPath: var(--maskClipPath);
+    box-sizing: var(--maskBoxSizing, border-box);
+    display: var(--maskDisplay, inline-flex);
+    padding: var(--maskStrokeThickness, 3px);
+    clip-path: var(--uiMaskClipPath);
+    background-color: var(--maskStrokeColor, currentColor);
+    --maskStrokeColor: #015666; /* Цвет рамки */
+    --maskStrokeThickness: 5px; /* Ширина рамки */ 
+}
+.mask-img{
+    max-width: 100%;
+    display: block;
+    clip-path: var(--uiMaskClipPath);
+}
+.mask, 
+.mask-img{
+    transition: clip-path var(--maskAnimationDuration, .2s) var(--maskAnimationTimingFunction, ease-out);
+}
+.mask-one{
+    --maskClipPath: polygon(0 10%, 10% 0, 90% 0, 100% 10%, 100% 90%, 90% 100%, 10% 100%, 0 90%);
+}
+.mask-one-frame{
+    --maskAnimationDuration: .4s;
+}
+.mask-one:hover, 
+.mask-one:focus{
+    --maskClipPath: polygon(0 0, 100% 0, 100% 10%, 100% 100%, 90% 100%, 0% 100%, 0% 90%, 0% 10%);
+}
