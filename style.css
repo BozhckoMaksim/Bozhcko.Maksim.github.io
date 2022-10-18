@@ -155,32 +155,3 @@ footer {
 .gain-center1:hover {
   transform: scale(1.1); /* Увеличиваем масштаб */
 }
-.mask{
-    --uiMaskClipPath: var(--maskClipPath);
-    box-sizing: var(--maskBoxSizing, border-box);
-    display: var(--maskDisplay, inline-flex);
-    padding: var(--maskStrokeThickness, 3px);
-    clip-path: var(--uiMaskClipPath);
-    background-color: var(--maskStrokeColor, currentColor);
-    --maskStrokeColor: #015666; /* Цвет рамки */
-    --maskStrokeThickness: 5px; /* Ширина рамки */ 
-}
-.mask-img{
-    max-width: 100%;
-    display: block;
-    clip-path: var(--uiMaskClipPath);
-}
-.mask, 
-.mask-img{
-    transition: clip-path var(--maskAnimationDuration, .2s) var(--maskAnimationTimingFunction, ease-out);
-}
-.mask-one{
-    --maskClipPath: polygon(0 10%, 10% 0, 90% 0, 100% 10%, 100% 90%, 90% 100%, 10% 100%, 0 90%);
-}
-.mask-one-frame{
-    --maskAnimationDuration: .4s;
-}
-.mask-one:hover, 
-.mask-one:focus{
-    --maskClipPath: polygon(0 0, 100% 0, 100% 10%, 100% 100%, 90% 100%, 0% 100%, 0% 90%, 0% 10%);
-}
